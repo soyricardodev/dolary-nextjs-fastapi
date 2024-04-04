@@ -6,9 +6,11 @@
     "backend:dev": "python3 -m uvicorn api.index:app --reload",
     "backend:format": "ruff format ./api",
     "dev": "concurrently \"bun run frontend:dev\" \"bun run backend:dev\"",
-    "frontend:dev": "next dev",
+    "frontend:dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "bunx @biomejs/biome lint ./src",
+    "format": "bunx @biomejs/biome format ./src"
   },
   "dependencies": {
     "@biomejs/biome": "^1.6.4",
