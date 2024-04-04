@@ -5,11 +5,10 @@
   "scripts": {
     "backend:dev": "python3 -m uvicorn api.index:app --reload",
     "backend:format": "ruff format ./api",
-    "frontend:dev": "next dev",
     "dev": "concurrently \"bun run frontend:dev\" \"bun run backend:dev\"",
+    "frontend:dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@biomejs/biome": "^1.6.4",
