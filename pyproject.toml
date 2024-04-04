@@ -1,0 +1,31 @@
+[tool.ruff]
+line-length = 100
+exclude = [
+  ".git",
+  "__pycache__",
+  ".vscode",
+  "venv",
+  ".venv",
+  "node_modules",
+]
+indent-width = 2
+
+[tool.ruff.lint]
+select = [
+  # pycodestyle
+  "E",
+  # Pyflakes
+  "F",
+  # pyupgrade
+  "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # isort
+  "I",
+]
+
+[tool.ruff.format]
+indent-style = "tab"
+docstring-code-format = true
