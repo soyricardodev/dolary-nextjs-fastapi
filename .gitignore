@@ -1,6 +1,7 @@
 __pycache__
 .venv
 venv
+.ruff_cache
 
 # dependencies
 /node_modules
